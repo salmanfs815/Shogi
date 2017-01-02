@@ -1,0 +1,10 @@
+create sfx archive
+Best
+Advanced/ SFX opts
+General/ Path to extract: C:\Program Files
+Setup/ Run after extraction: cmd.exe /c "C:\Program Files\Shogi\install.bat"
+Advanced/ Add shortcut
+	Desktop: C:\Program Files\Shogi\run.bat
+	Start Menu/Programs: C:\Program Files\Shogi\run.bat
+
+when no bugs... replace /k with /c and add icons

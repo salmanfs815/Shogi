@@ -1,0 +1,1 @@
+./makeself.sh Shogi_Linux shogi.sh Shogi ./install.sh

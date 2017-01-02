@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Shogi
+Exec=julia /usr/share/applications/shogi/game.jl
+Icon=/usr/share/applications/shogi/images/logo.png
+Type=Application
+Keywords=shogi;japanese;chess;
+Categories=GTK;GNOME;Utility;
