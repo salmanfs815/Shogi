@@ -10,8 +10,8 @@ include("move_helpers.jl")
 
 function updateBoard(oldBoard, movesTable)
 
+    #duplicate the game board recursively using i-1 version and set the gametype depending on board size
     board = duplicateBoard(oldBoard)
-
     if length(board) == 5
         gameType = "mini"
     elseif length(board) == 9
@@ -26,7 +26,8 @@ function updateBoard(oldBoard, movesTable)
     capturedByEven = Array{piece,1}
     # holds all the pieces that the odd player (player 2) has captured
     capturedByOdd = Array{piece,1}
-
+    
+    #keep track of the current move, the ith move, and if the game is still being played
     currentMove = 1
     movesPlayed = length(movesTable[1])
     gameActive = true # flag for whether game has been resigned
@@ -46,7 +47,7 @@ function updateBoard(oldBoard, movesTable)
          - col 9: targetx2
          - col 10: targety2
         =#
-
+        
         side = currentMove % 2
         moveType = get(movesTable[2][currentMove])
         sourceX = movesTable[3][currentMove]
@@ -59,7 +60,7 @@ function updateBoard(oldBoard, movesTable)
         targetX3 = movesTable[11][currentMove]
         targetY3 = movesTable[12][currentMove]
        
-        
+        #conditionals for actions based on the variable moveType
         if moveType == "move"
             movePiece(gameType, board, currentMove, sourceX, sourceY, targetX, targetY, option, targetX2, targetY2, targetX3, targetY3)
         elseif moveType == "drop"
