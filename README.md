@@ -20,7 +20,7 @@ The libraries used in this project are:
 * DataFranes
 * SQLite
 
-## Installation for Julia and dependencies
+## Installation 
 
 Run the script:
 
