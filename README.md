@@ -2,6 +2,26 @@
 
 A desktop application for Windows and Linux to play Shogi (Japanese chess)
 
+
+## Features
+
+* There are 4 game modes (varying board sizes and pieces used):
+  * Mini (5x5)
+  * Standard (9x9)
+  * Chu (12x12)
+  * Tenjiku (16x16)
+* There are 5 AI difficulty levels:
+  * Normal (AI will play with normal difficulty)
+  * Hard (AI will play harder than normal difficulty)
+  * Suicidal (AI will make worst possible move)
+  * Protracted death (after ensuring the safety of the king, AI will make worst possible move)
+  * Random (AI will make random moves)
+* Timed mode
+* Multiplayer
+  * Same computer
+  * Over email (email game file to other player to make move)
+  * Over LAN
+
 ## Getting Started
 
 Clone the repository in your local machine:
